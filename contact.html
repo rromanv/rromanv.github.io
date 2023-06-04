@@ -27,30 +27,42 @@
           <div class="navbar-nav ms-auto">
             <a class="nav-link" aria-current="page" href="#">Home</a>
             <a class="nav-link " href="/resume.html">Resume</a>
-            <a class="nav-link active" href="/portfolio.html">Portfolio</a>
-            <a class="nav-link" href="/contact.html">Contact</a>
+            <a class="nav-link" href="/portfolio.html">Portfolio</a>
+            <a class="nav-link active" href="/contact.html">Contact</a>
           </div>
         </div>
       </div>
     </nav>
   </header>
   <main>
-    <section class="portfolio container row mx-auto gap-5 d-flex justify-content-center align-items-center">
-      <h1 class="display-1 text-center">Portfolio</h1>
-      <div class="row gx-5 justify-content-center">
-        <div class="col-lg-11 col-xl-9 col-xxl-8">
-          <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-            <div class="card-body p-0">
-              <div class="row align-items-center">
-                <div class="col p-5">
-                  <h2 class="fw-bolder">Magic Ball</h2>
-                  <p class="text-muted">Magic Ball is a simple game that allows the user to ask a question and get a
-                    random answer. The game was created using HTML, CSS, and JavaScript.</p>
-                  <a class="btn btn-warning" href="/magic-ball">View Project</a>
-                </div>
-                <img class="col-lg-6 rounded mx-auto d-none d-lg-block" src="./mb.png" alt="Magic Ball Screenshot" />
+    <section class="portfolio container  mx-auto">
+      <div class="row">
+        <div class="col col-md-10 col-lg-8 col-xl-7 mx-auto">
+          <h1 class="display-1 text-center mb-3">Contact</h1>
+          <h3 class="display-4 text-center mb-5">For any Inquiry, let's talk</h3>
+          <div class="row gx-5 justify-content-center">
+            <form class="d-flex flex-column gap-4">
+              <div class="form-floating">
+                <input id="name" class="form-control text-light" type="text" placeholder="Enter your name" required>
+                <label for="name"><span class="text-danger">*</span> Full Name</label>
               </div>
-            </div>
+              <div class="form-floating">
+                <input id="email" class="form-control text-light" type="email" placeholder="Enter your email" required>
+                <label for="email"><span class="text-danger">*</span> Email</label>
+              </div>
+              <div class="form-floating">
+                <input id="phone" class="form-control text-light" type="tel" placeholder="Enter your Phone">
+                <label for="phone">Phone Number</label>
+              </div>
+              <div class="form-floating">
+                <textarea id="message" class="form-control text-light h-100" placeholder="Enter your Phone"></textarea>
+                <label for="message">Message</label>
+              </div>
+              <div class="text-muted small">
+                <span class="text-danger">*</span> Required Field
+              </div>
+              <button class="btn btn-warning btn-lg">Submit</button>
+            </form>
           </div>
         </div>
       </div>
